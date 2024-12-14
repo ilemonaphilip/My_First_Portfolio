@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tweets</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Embedded Tweet</h1>
-    <!-- Embed a Tweet -->
-    <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">
-            Just setting up my Twitter. #myfirstTweet
-        </p>
-        &mdash; Twitter (@Twitter) 
-        <a href="https://twitter.com/Twitter/status/20">March 21, 2006</a>
-    </blockquote>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <!-- Navigation Link -->
-    <nav>
-        <a href="index.html">Back to Homepage</a>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>My Embedded Tweet</h1>
+            <!-- Embed a Tweet -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                    Just setting up my Twitter. #myfirstTweet
+                </p>
+                &mdash; Twitter (@Twitter)
+                <a href="https://twitter.com/Twitter/status/20">March 21, 2006</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+        <aside>
+            <p>Placeholder to add comment thread later</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Jane Doe - <a href="https://example.com" target="_blank">here</a>.</p>
+    </footer>
 </body>
 </html>
