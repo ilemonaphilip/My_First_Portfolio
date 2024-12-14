@@ -14,17 +14,40 @@
         .highlight {
             color: green;
         }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <article id="user123" class="user-card" data-user-level="novice">
-        <p class="highlight">Name: Jane Doe</p>
-        <p>Interests: HTML, CSS, JavaScript</p>
-        <p>Email: jane.doe@example.com</p>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </article>
-    <nav>
-        <a href="tweets.html">View My Tweets</a>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div id="user123" class="user-card" data-user-level="novice">
+                <p class="highlight">Name: Jane Doe</p>
+                <p>Interests: HTML, CSS, JavaScript</p>
+                <p>Email: jane.doe@example.com</p>
+                <p>&copy; 2024 My Website. All rights reserved.</p>
+            </div>
+        </article>
+        <aside>
+            <p>Placeholder to add comment thread later</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Jane Doe - <a href="https://example.com" target="_blank">here</a>.</p>
+    </footer>
 </body>
 </html>
